@@ -16,3 +16,5 @@
 - `symfony new app --webapp` - build a traditional web application
 - `symfony new app` - build a microservice, console application or API
 
+### Notes
+- You need clean `app` folder before start to create new symfony app
