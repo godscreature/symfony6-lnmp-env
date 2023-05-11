@@ -16,5 +16,20 @@
 - `symfony new app --webapp` - build a traditional web application
 - `symfony new app` - build a microservice, console application or API
 
+### Quick setup
+- Run `cd docker`
+- Run `docker-compose up -d --build`
+- Enter to Php container via Docker Desktop
+- Run `symfony new ../app --webapp`
+- Make file `app/.env.local` from `app/.env`
+- Configure database url in `.env.local`, use this `DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"`
+
 ### Notes
-- You need clean `app` folder before start to create new symfony app
+- You need to clean `app` folder before start to create new symfony app
+- Right database url: `DATABASE_URL="mysql://root:root@database:3306/db01?serverVersion=8.0"`
+    - user = `root`
+    - password = `root`
+    - host = `database`
+    - port = `3306`
+    - base = `db01`
+ 
